@@ -1,3 +1,5 @@
+This is my first edit in Github
+
 # highcharts-scatter-csv
 Highcharts XY scatter chart template with CSV data
 
@@ -15,6 +17,4 @@ http://www.highcharts.com is free for personal websites, school sites, or non-pr
 - from TrendCT, NY Times, Stanford Education Data Archive, and American Community Survey 2009-13
 - see data details at https://github.com/jackdougherty/otl-scatter-districts-income-grades
 
-## learn more at DataVizForAll.org book
-- Tutorial: Modify and Host a Highcharts Scatter Chart Template on GitHub, https://www.datavizforall.org/github/fork-highcharts
-- More Highcharts Templates, https://www.datavizforall.org/Highcharts
+
