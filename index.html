@@ -15,12 +15,13 @@
   <script src="https://code.highcharts.com/modules/exporting.js"></script>
 </head>
 <body>
-  <div id="container" style="width:400px; height:400px;"></div>
+  <div id="container1" style="width:400px; height:400px;"></div>
+  <div id="container2" style="width:50%; height:400px;"></div>
   <script>
 
   $(function() {
     $.get('data-scatter.csv', function(csv) {     // EDIT to match your CSV data file name
-      Highcharts.chart('container', {
+      Highcharts.chart('container1', {
         chart: {
           type: 'scatter',
           zoomType: 'xy'
@@ -94,6 +95,32 @@
         },
 
       });
+    });
+  });
+    
+  $(function () { 
+    var myChart = Highcharts.chart('container2', {
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Fruit Consumption'
+        },
+        xAxis: {
+            categories: ['Apples', 'Bananas', 'Oranges']
+        },
+        yAxis: {
+            title: {
+                text: 'Fruit eaten'
+            }
+        },
+        series: [{
+            name: 'Jane',
+            data: [1, 0, 4]
+        }, {
+            name: 'John',
+            data: [5, 7, 3]
+        }]
     });
   });
 
